@@ -2,12 +2,8 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import { Navbar, Nav, Container } from 'react-bootstrap';
 
-import 'bootstrap/dist/css/bootstrap.min.css';
-import  Home  from './Components/Home';
-import  About  from './Components/About';
-import  Contact  from './Components/Contact';
 
-function App() {
+const Navbar = () => {
   return (
     <Router>
       <Navbar bg="dark" variant="dark" expand="lg">
@@ -32,7 +28,7 @@ function App() {
         </Routes>
       </Container>
     </Router>
-  );
+  )
 }
 
-export default App;
+export default Navbar
